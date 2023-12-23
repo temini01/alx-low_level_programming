@@ -1,10 +1,9 @@
-#include <stdio.h>
-
-int main() {
-    // Using puts to print the specified string
+/*
+ * main "Programming is like building a multilingual puzzle"
+ */
+int main(void) 
+{
     puts("Programming is like building a multilingual puzzle");
-
-    // Returning success (0)
     return 0;
 }
 
