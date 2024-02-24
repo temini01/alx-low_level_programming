@@ -1,20 +1,13 @@
-#include <stdlib.h>
-#include "lists.h"
+#include <stdio.h>
+
+void __attribute__ ((constructor))first(void);
 
 /**
- * free_list - Function to free a linked list
- * @head: list_t list to be freed
+ * first - Print a sentence befor the main
+ * function is executed
  */
-void free_list(list_t *head)
+void first(void)
 {
-	/*Check if the head pointer is NULL*/
-	if (head == NULL)
-		return;
-
-	/*Recursively free the rest of the list*/
-	free_list(head->next);
-
-	/*Free the current node's string and memory*/
-	free(head->str);
-	free(head);
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
